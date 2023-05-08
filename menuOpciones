@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class MenuDibujo {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int opcion = 0;
+        do {
+            System.out.println("MENU DE DIBUJO");
+            System.out.println("1. Dibujar una recta");
+            System.out.println("2. Dibujar un punto");
+            System.out.println("3. Dibujar un rectángulo");
+            System.out.println("4. Salir");
+            System.out.print("Seleccione una opción: ");
+            opcion = sc.nextInt();
+            switch (opcion) {
+                case 1:
+                    System.out.println("Ha elegido dibujar una recta");
+                    break;
+                case 2:
+                    System.out.println("Ha elegido dibujar un punto");
+                    break;
+                case 3:
+                    System.out.println("Ha elegido dibujar un rectángulo");
+                    break;
+                case 4:
+                    System.out.println("Ha elegido salir. ¡Hasta la vista!");
+                    break;
+                default:
+                    System.out.println("Opción no válida. Por favor, seleccione una opción del menú");
+                    break;
+            }
+        } while (opcion != 4);
+    }
+}
